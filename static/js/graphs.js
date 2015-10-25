@@ -3,14 +3,9 @@ queue()
     .defer(d3.json, "../static/geojson/us-states.json")
     .await(makeGraphs);
 
-    // Used for Mongo DB
-    //.defer(d3.json, "/donorschoose/projects")
-
 function makeGraphs(error, projectsJson, statesJson) {
 	
-	console.log(projectsJson)
-
-
+	//console.log(projectsJson)
 	/*
 		date_posted: Sun Sep 01 2002 00:00:00 GMT+0100 (GMT Daylight Time)
 		poverty_level: "moderate poverty"
@@ -19,8 +14,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 		total_donations: 125
 	*/
 
-
-	console.log(statesJson)
+	//console.log(statesJson)
 	/*
 		{"type":"FeatureCollection","features":[
 			{"type":"Feature",
