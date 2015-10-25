@@ -1,6 +1,6 @@
 queue()
-    .defer(d3.csv, "/static/data/donations.csv")
-    .defer(d3.json, "/static/geojson/us-states.json")
+    .defer(d3.csv, "../static/data/donations.csv")
+    .defer(d3.json, "../static/geojson/us-states.json")
     .await(makeGraphs);
 
     // Used for Mongo DB
